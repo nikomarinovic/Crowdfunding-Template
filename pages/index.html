@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bela Blok - The Smarter Way to Track Your Bela Games</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <div class="bb-letters">
+                            <span>B</span>
+                            <span>B</span>
+                        </div>
+                    </div>
+                    <span class="logo-text">Bela Blok</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#rewards">Rewards</a>
+                    <a href="#invest">Invest</a>
+                    <a href="#roadmap">Roadmap</a>
+                    <a href="#transparency">Transparency</a>
+                    <button class="btn-primary" onclick="scrollToSection('rewards')">Back This Project</button>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero gradient-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge animate-fade-in-up" style="animation-delay: 0.1s">
+                    <span class="badge-dot"></span>
+                    Live Campaign
+                </div>
+                
+                <h1 class="hero-title animate-fade-in-up" style="animation-delay: 0.2s">
+                    <span class="title-main">Bela Blok</span>
+                    <span class="title-subtitle">The smarter way to track your Bela games</span>
+                </h1>
+                
+                <p class="hero-description animate-fade-in-up" style="animation-delay: 0.3s">
+                    Say goodbye to paper score sheets. Bela Blok is a modern, offline-first digital 
+                    scorekeeping app built for serious and casual Bela players alike.
+                </p>
+                
+                <div class="hero-cta animate-fade-in-up" style="animation-delay: 0.4s">
+                    <button class="btn-hero-primary" onclick="scrollToSection('rewards')">
+                        Support the Project
+                    </button>
+                    <button class="btn-hero-secondary" onclick="scrollToSection('invest')">
+                        Become a Backer
+                    </button>
+                </div>
+                
+                <!-- Funding Stats -->
+                <div class="funding-stats animate-fade-in-up" style="animation-delay: 0.5s">
+                    <div class="stat-item">
+                        <div class="stat-value" data-target="3500">€0</div>
+                        <div class="stat-label">pledged of €10,000</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-value" data-target="127">0</div>
+                        <div class="stat-label">backers</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-value" data-target="23">0</div>
+                        <div class="stat-label">days to go</div>
+                    </div>
+                </div>
+                
+                <div class="progress-container animate-fade-in-up" style="animation-delay: 0.6s">
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="35"></div>
+                    </div>
+                    <div class="progress-label">35% funded</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-decoration">
+            <div class="decoration-circle circle-1"></div>
+            <div class="decoration-circle circle-2"></div>
+            <div class="decoration-circle circle-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge bg-primary">The Problem & Solution</span>
+                <h2 class="section-title">Why Bela Blok?</h2>
+            </div>
+            
+            <!-- Problem vs Solution -->
+            <div class="comparison-grid">
+                <div class="comparison-card problem-card">
+                    <div class="card-header">
+                        <h3 class="card-title text-destructive">The Old Way</h3>
+                    </div>
+                    <ul class="comparison-list">
+                        <li>
+                            <span class="icon-x">x</span>
+                            <span>Paper gets lost, torn, or wet</span>
+                        </li>
+                        <li>
+                            <span class="icon-x">x</span>
+                            <span>Calculation mistakes cause arguments</span>
+                        </li>
+                        <li>
+                            <span class="icon-x">x</span>
+                            <span>No way to track your game history</span>
+                        </li>
+                        <li>
+                            <span class="icon-x">x</span>
+                            <span>Messy handwriting is hard to read</span>
+                        </li>
+                        <li>
+                            <span class="icon-x">x</span>
+                            <span>Always looking for a pen that works</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="comparison-card solution-card">
+                    <div class="card-header">
+                        <h3 class="card-title text-success">The Bela Blok Way</h3>
+                    </div>
+                    <ul class="comparison-list">
+                        <li>
+                            <span class="icon-check">✓</span>
+                            <span>Always in your pocket, always ready</span>
+                        </li>
+                        <li>
+                            <span class="icon-check">✓</span>
+                            <span>Automatic calculations — no more disputes</span>
+                        </li>
+                        <li>
+                            <span class="icon-check">✓</span>
+                            <span>Complete game history and statistics</span>
+                        </li>
+                        <li>
+                            <span class="icon-check">✓</span>
+                            <span>Clean, readable interface</span>
+                        </li>
+                        <li>
+                            <span class="icon-check">✓</span>
+                            <span>Works offline — no internet needed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3m8.293 8.293l1.414 1.414" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Works Offline</h3>
+                    <p class="feature-description">No internet? No problem. Track games anywhere, anytime.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-description">Add scores with just a few taps. No more fumbling with paper.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Statistics</h3>
+                    <p class="feature-description">Track your performance over time with detailed insights.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Clean Interface</h3>
+                    <p class="feature-description">Beautiful, ad-free design that stays out of your way.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Team Tracking</h3>
+                    <p class="feature-description">Keep score for 2 team games effortlessly.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Cloud Sync</h3>
+                    <p class="feature-description">Optional sync across devices to never lose your data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rewards Section -->
+    <section id="rewards" class="rewards-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge bg-primary">Rewards</span>
+                <h2 class="section-title">Choose Your Support Level</h2>
+                <p class="section-description">
+                    Every contribution helps bring Bela Blok to life. Pick a reward tier and join our community of supporters.
+                </p>
+            </div>
+            
+            <div class="rewards-grid">
+                <!-- Tier 1: €3 -->
+                <div class="reward-card">
+                    <div class="reward-header">
+                        <div class="reward-icon">
+                            <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div class="reward-price">€3</div>
+                    </div>
+                    <h3 class="reward-title">Buy me a coffee</h3>
+                    <ul class="reward-benefits">
+                        <li>
+                            <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Thank you email
+                        </li>
+                        <li>
+                            <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Name listed on supporter wall
+                        </li>
+                    </ul>
+                    <button class="btn-reward" onclick="openRewardModal(3, 'Buy me a coffee', ['Thank you email', 'Name listed on supporter wall'])">
+                        Select Reward
+                    </button>
+                    <p class="reward-backers">127 backers</p>
+                </div>
+                
+                <!-- Tier 2: €10 -->
+                <div class="reward-card">
+                    <div class="reward-header">
+                        <div class="reward-icon">
+                            <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                            </svg>
+                        </div>
+                        <div class="reward-price">€10</div>
+                    </div>
+                    <h3 class="reward-title">Early Supporter</h3>
+                    <ul class="reward-benefits">
+                        <li>
+                            <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            All previous rewards
+                        </li>
+                        <li>
+                            <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Early access to the app
+                        </li>
+                    </ul>
+                    <button class="btn-reward" onclick="openRewardModal(10, 'Early Supporter', ['All previous rewards', 'Early access to the app'])">
+                        Select Reward
+                    </button>
+                    <p class="reward-backers">84 backers</p>
+                </div>
+                
+                <!-- Tier 3: €25 - Most Popular -->
+                <div class="reward-card featured">
+                    <div class="popular-badge gradient-accent">Most Popular</div>
+                    <div class="reward-header">
+                        <div class="reward-icon">
+                            <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                            </svg>
+                        </div>
+                        <div class="reward-price">€25</div>
+                    </div>
+                    <h3 class="reward-title">Premium Player</h3>
+                    <ul class="reward-benefits">
+                        <li>
+                            <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            All previous rewards
+                        </li>
+                        <li>
+                            <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Free Premium In-App Package
+                        </li>
+                        <li>
+                            <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Advanced statistics & themes
+                        </li>
+                    </ul>
+                    <button class="btn-reward featured-btn" onclick="openRewardModal(25, 'Premium Player', ['All previous rewards', 'Free Premium In-App Package', 'Advanced statistics & themes'])">
+                        Select Reward
+                    </button>
+                    <p class="reward-backers">156 backers</p>
+                </div>
+                
+                <!-- Tier 4: €50 -->
+                <div class="reward-card">
+                    <div class="reward-header">
+                        <div class="reward-icon">
+                            <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                            </svg>
+                        </div>
+                        <div class="reward-price">€50</div>
+                    </div>
+                    <h3 class="reward-title">Founder Pack</h3>
+                    <ul class="reward-benefits">
+                        <li>
+                            <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            All previous rewards
+                        </li>
+                        <li>
+                            <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Lifetime Premium
+                        </li>
+                        <li>
+                            <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Exclusive founder badge
+                        </li>
+                    </ul>
+                    <button class="btn-reward" onclick="openRewardModal(50, 'Founder Pack', ['All previous rewards', 'Lifetime Premium', 'Exclusive founder badge'])">
+                        Select Reward
+                    </button>
+                    <p class="reward-backers">43 backers</p>
+                </div>
+                
+                <!-- Tier 5: €100 -->
+                <div class="reward-card">
+                    <div class="reward-header">
+                        <div class="reward-icon">
+                            <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                        </div>
+                        <div class="reward-price">€100</div>
+                    </div>
+                    <h3 class="reward-title">Sponsor</h3>
+                    <ul class="reward-benefits">
+                        <li>
+                            <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            All previous rewards
+                        </li>
+                        <li>
+                            <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Name/logo in app credits
+                        </li>
+                        <li>
+                            <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Priority support
+                        </li>
+                    </ul>
+                    <button class="btn-reward" onclick="openRewardModal(100, 'Sponsor', ['All previous rewards', 'Name/logo in app credits', 'Priority support'])">
+                        Select Reward
+                    </button>
+                    <p class="reward-backers">12 backers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment/Equity Section -->
+    <section id="invest" class="invest-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge bg-accent">Investment Opportunity</span>
+                <h2 class="section-title">Become a Shareholder</h2>
+                <p class="section-description">
+                    Join us as an equity investor and share in the success of Bela Blok. 
+                    30% of company equity is reserved for crowdfunding investors.
+                </p>
+            </div>
+            
+            <div class="invest-container">
+                <div class="invest-info">
+                    <!-- Company Stats -->
+                    <div class="stats-card">
+                        <div class="stat-box">
+                            <div class="stat-number">€150,000</div>
+                            <div class="stat-label">Company Valuation</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">30%</div>
+                            <div class="stat-label">Equity Available</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">€500</div>
+                            <div class="stat-label">Minimum Investment</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Equity Formula -->
+                    <div class="formula-card">
+                        <h3 class="formula-title">How Equity is Calculated</h3>
+                        <div class="formula-box">
+                            <span class="formula-text">Equity % = </span>
+                            <span class="formula-highlight">(Investment / €150,000)</span>
+                            <span class="formula-text"> × 100</span>
+                        </div>
+                        <div class="examples-grid">
+                            <div class="example-box">
+                                <div class="example-investment">€1,500</div>
+                                <div class="example-equity">1%</div>
+                                <div class="example-label">equity stake</div>
+                            </div>
+                            <div class="example-box">
+                                <div class="example-investment">€7,500</div>
+                                <div class="example-equity">5%</div>
+                                <div class="example-label">equity stake</div>
+                            </div>
+                            <div class="example-box">
+                                <div class="example-investment">€15,000</div>
+                                <div class="example-equity">10%</div>
+                                <div class="example-label">equity stake</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Investor Benefits -->
+                    <div class="benefits-card">
+                        <h3 class="benefits-title">What Investors Receive</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                    </svg>
+                                </div>
+                                <div class="benefit-content">
+                                    <div class="benefit-name">Digital Certificate</div>
+                                    <div class="benefit-desc">Official shareholder certificate documenting your ownership</div>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                    </svg>
+                                </div>
+                                <div class="benefit-content">
+                                    <div class="benefit-name">Revenue Share</div>
+                                    <div class="benefit-desc">Proportional share based on your ownership percentage</div>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                    </svg>
+                                </div>
+                                <div class="benefit-content">
+                                    <div class="benefit-name">Priority Access</div>
+                                    <div class="benefit-desc">First to access new features and future updates</div>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                    </svg>
+                                </div>
+                                <div class="benefit-content">
+                                    <div class="benefit-name">Investor Updates</div>
+                                    <div class="benefit-desc">Regular progress reports and financial transparency</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-invest" onclick="openInvestModal()">
+                            Invest Now — Starting at €500
+                        </button>
+                        <p class="invest-disclaimer">By investing, you agree to our investment terms and conditions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="roadmap-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge bg-primary">Roadmap</span>
+                <h2 class="section-title">Development Timeline</h2>
+                <p class="section-description">Our plan to bring Bela Blok to market</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item completed">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Q4 2025 • Completed</div>
+                        <h3 class="timeline-title">Concept & Design</h3>
+                        <p class="timeline-description">
+                            Market research, user interviews, UI/UX design, and technical architecture planning.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item active">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Q1 2026 • In Progress</div>
+                        <h3 class="timeline-title">MVP Development</h3>
+                        <p class="timeline-description">
+                            Building core features: score tracking, offline sync, basic statistics, and responsive design.
+                        </p>
+                        <div class="timeline-progress">
+                            <div class="timeline-progress-bar">
+                                <div class="timeline-progress-fill" style="width: 60%"></div>
+                            </div>
+                            <span class="timeline-progress-label">60% complete</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Q2 2026</div>
+                        <h3 class="timeline-title">Beta Testing</h3>
+                        <p class="timeline-description">
+                            Limited release to early supporters for testing, feedback collection, and bug fixes.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Q3 2026</div>
+                        <h3 class="timeline-title">Public Launch</h3>
+                        <p class="timeline-description">
+                            Official release on App Store and Google Play. Marketing campaign and user acquisition.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Q4 2026</div>
+                        <h3 class="timeline-title">Premium Features</h3>
+                        <p class="timeline-description">
+                            Advanced statistics, custom themes, tournament mode, multiplayer sync, and more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparency Section -->
+    <section id="transparency" class="transparency-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge bg-primary">Transparency</span>
+                <h2 class="section-title">Budget Breakdown</h2>
+                <p class="section-description">Where your money goes</p>
+            </div>
+            
+            <div class="transparency-grid">
+                <div class="budget-card">
+                    <h3 class="budget-title">Funding Goal: €10,000</h3>
+                    
+                    <div class="budget-items">
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <span class="budget-item-label">Development Costs</span>
+                                <span class="budget-item-percent">45%</span>
+                            </div>
+                            <div class="budget-bar">
+                                <div class="budget-fill" style="width: 45%; background: hsl(174 60% 40%)"></div>
+                            </div>
+                            <div class="budget-amount">€4,500</div>
+                        </div>
+                        
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <span class="budget-item-label">App Store Fees & Hosting</span>
+                                <span class="budget-item-percent">20%</span>
+                            </div>
+                            <div class="budget-bar">
+                                <div class="budget-fill" style="width: 20%; background: hsl(190 70% 35%)"></div>
+                            </div>
+                            <div class="budget-amount">€2,000</div>
+                        </div>
+                        
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <span class="budget-item-label">Marketing & User Acquisition</span>
+                                <span class="budget-item-percent">15%</span>
+                            </div>
+                            <div class="budget-bar">
+                                <div class="budget-fill" style="width: 15%; background: hsl(16 85% 60%)"></div>
+                            </div>
+                            <div class="budget-amount">€1,500</div>
+                        </div>
+                        
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <span class="budget-item-label">Platform Fees (Crowdfunding)</span>
+                                <span class="budget-item-percent">10%</span>
+                            </div>
+                            <div class="budget-bar">
+                                <div class="budget-fill" style="width: 10%; background: hsl(30 90% 55%)"></div>
+                            </div>
+                            <div class="budget-amount">€1,000</div>
+                        </div>
+                        
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <span class="budget-item-label">Legal & Administrative</span>
+                                <span class="budget-item-percent">10%</span>
+                            </div>
+                            <div class="budget-bar">
+                                <div class="budget-fill" style="width: 10%; background: hsl(150 60% 45%)"></div>
+                            </div>
+                            <div class="budget-amount">€1,000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <div class="bb-letters">
+                                <span>B</span>
+                                <span>B</span>
+                            </div>
+                        </div>
+                        <span class="logo-text">Bela Blok</span>
+                    </div>
+                    <p class="footer-tagline">The smarter way to track your Bela games</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Project</h4>
+                        <a href="#about">About</a>
+                        <a href="#rewards">Rewards</a>
+                        <a href="#invest">Investment</a>
+                        <a href="#roadmap">Roadmap</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Connect</h4>
+                        <a href="https://github.com/Nmarino8">GitHub</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Legal</h4>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                        <a href="investment-terms.html">Investment Terms</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2026 Bela Blok. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Reward Modal -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Investment Modal -->
+    <div id="investModal" class="modal">
+        <div class="modal-overlay" onclick="closeInvestModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeInvestModal()">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            
+            <div id="investModalBody"></div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

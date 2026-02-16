@@ -8,6 +8,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        .image-row {
+          display: flex;
+          justify-content: center; /* Centers the row; use space-around or space-between for different spacing */
+          gap: 20px; /* Adds space between images; adjust as needed */
+          flex-wrap: nowrap; /* Keeps them inline/single row */
+          padding: 20px 0; /* Vertical space above/below the row */
+          overflow: hidden; /* Prevents horizontal scroll on small screens */
+        }
+        
+        .image-row img {
+          flex: 1; /* Equal width distribution */
+          max-width: 22%; /* Limits each to ~1/4 width minus gaps */
+          height: auto; /* Maintains aspect ratio */
+          object-fit: cover; /* Crops to fill if needed; use contain to fit fully */
+          resize: both; /* Enables user-drag resizing (horizontal/vertical); optional, works in modern browsers */
+          border-radius: 8px; /* Optional: rounded corners */
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+          .image-row {
+            gap: 10px;
+          }
+          .image-row img {
+            max-width: 45%; /* 2-per-row on tablets */
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .image-row {
+            flex-wrap: wrap; /* Stacks on mobile */
+          }
+          .image-row img {
+            max-width: 100%; /* Full width per image */
+          }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -101,6 +140,13 @@
             <div class="decoration-circle circle-3"></div>
         </div>
     </section>
+
+    <div class="image-row">
+      <img src="images/screenshot1.png" alt="Screenshot 1" class="screenshot-thumb">
+      <img src="images/screenshot2.png" alt="Screenshot 2" class="screenshot-thumb">
+      <img src="images/screenshot3.png" alt="Screenshot 3" class="screenshot-thumb">
+      <img src="images/screenshot4.png" alt="Screenshot 4" class="screenshot-thumb">
+    </div>
 
     <!-- About Section -->
     <section id="about" class="about-section">
